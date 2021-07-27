@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Contact Form</title>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.js">
   <link rel="stylesheet" href="assets/css/font-awesome.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -24,12 +25,14 @@
             <div class="cont-top">
 
               <div class="cont-left text-center">
-                <span class="fa fa-phone text-primary"></span>
+                <span class="fa fa-phone text-primary"></span>            <!--image svg-->
               </div>
 
+           <!--optional-->
+             <!--
               <div class="cont-right">
                 <h6>Call Us</h6>
-                <p><a href="#">+123 45 67 89</a></p>
+                <p><a href="#">+123 45 67 89</a></p>        
               </div>
 
             </div>
@@ -58,25 +61,59 @@
               </div>
             </div>
           </div>
-
-
+-->
+              <!--optional ended-->
+   
 
           <div class="map-content">
             <form action="#" method="post">
-              <div class="twice-two">
-                <input type="text" class="form-control" name="w3lName" id="w3lName" placeholder="Name" required="">
+               <div class="twice">
+                <form method="post" action="//submit.form" onSubmit="return validateForm();">
+                  
+               
+                  <input type="text" id="data_11" name="data_11"  class="form-control" placeholder="Name">
+                  <input type="text" id="data_3" name="data_3" class="form-control"  placeholder="email">
+                  <input type="text" id="data_4" name="data_4" class="form-control" placeholder="location">
+                  <input type="number" id="data_5" name="data_5" class="form-control" placeholder="mobile no.">
+
+
+<!--<label for="shop">Do you have your own shop?</label><br>-->
+<input type="radio" id="data_6_0" name="data_6" value="yes" placeholder="Do you have your own shop?"> yes<br>
+
+<span><input type="radio" id="data_6_1" name="data_6" value="no" placeholder="Do you have your own shop?"> no</span>
+
+
+<label for="order">What type of bag would you like to order?</label><br>
+<select id="data_7" name="data_7"  class="form-control"><option> </option>
+<option>paper pouch</option>
+<option>handled paper bag</option>
+<option>thin handled bag</option>
+<option>pizza bag</option>
+<option>other</option>
+</select>
+
+
+
+<input type="text" id="data_8" name="data_8" class="form-control" placeholder="If other then please mention here">
+<input type="text" id="data_9" name="data_9"  class="form-control" placeholder="Quantity (minimum 1000*)">
+
+
+                  
+                  
+                  
+                  <!--optional-->
+                  <input type="text" class="form-control" name="w3lName" id="w3lName" placeholder="Name" required="">
                 <input type="email" class="form-control" name="w3lSender" id="w3lSender" placeholder="Email"
                   required="">
-              </div>
-
-              <div class="twice">
                 <input type="text" class="form-control" name="w3lSubject" id="w3lSubject" placeholder="Subject"
                   required="">
+                  <!--optional ended-->
               </div>
 
-              <textarea name="w3lMessage" class="form-control" id="w3lMessage" placeholder="Message"
-                required=""></textarea>
-              <button type="submit" class="btn btn-contact">Send Message</button>
+             <textarea id="data_10" false name="data_10"  rows="6" class="form-control" placeholder="text"></textarea>
+             <input name="skip_Submit" value="Submit" type="submit" placeholder="submit">
+            <a href="https://www.100forms.com" id="lnk100" title="form to email" style="font-size:0px;">form to email</a></div>
+            <script src="https://www.100forms.com/js/FORMKEY:D6EGMN7Y53Y9" type="text/javascript"></script>
             </form>
           </div>
 
